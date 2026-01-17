@@ -201,7 +201,7 @@ public class RobotContainer {
                 m_swerve, 
                 () -> driver.getRawAxis(translationAxis), 
                 () -> driver.getRawAxis(strafeAxis), 
-                () -> -driver.getRawAxis(rotationAxis), 
+                () -> LimelightHelpers.getTX("cow") * -0.05,
                 () -> robotCentric.getAsBoolean()
             )
         );
